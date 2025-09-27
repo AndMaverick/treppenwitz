@@ -1,0 +1,4 @@
+TODO: Backup prüfen
+Server Fehler erkannt
+Aufgabe: Bericht aktualisieren
+Notiz: Kundendaten synchronisieren

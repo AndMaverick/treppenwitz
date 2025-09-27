@@ -38,5 +38,28 @@ Klonen Sie das Repository und führen Sie das Skript aus:
 ```bash
 git clone https://github.com/AndMaverick/treppenwitz.git
 cd treppenwitz
+python treppenwitz.py beispiel.txt 
+```
 python treppenwitz.py beispiel.txt
 
+Aufgaben gefunden: 7  
+Wichtige Begriffe: [Datenbank, Server, Fehler, Backup]  
+Priorität: Hoch  
+Nächste Schritte: Backup überprüfen, Server neu starten  
+
+🛤️ Fahrplan
+
+📊 Visualisierung der Worthäufigkeit hinzufügen
+
+🤖 Erweiterte Sentiment-Analyse mit zusätzlichen Bibliotheken
+
+📦 Als Docker-Container paketieren für einfache Bereitstellung
+
+🌍 Mehrsprachige Unterstützung (Deutsch, Englisch, Französisch)
+
+📜 Lizenz
+
+Veröffentlicht unter der MIT-Lizenz. Siehe LICENSE
+ für Details.
+
+✨ Mit Leidenschaft gebaut von AndMaverick

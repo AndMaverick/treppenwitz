@@ -40,7 +40,6 @@ git clone https://github.com/AndMaverick/treppenwitz.git
 cd treppenwitz
 python treppenwitz.py beispiel.txt 
 ```
-python treppenwitz.py beispiel.txt
 
 Aufgaben gefunden: 7  
 Wichtige Begriffe: [Datenbank, Server, Fehler, Backup]  

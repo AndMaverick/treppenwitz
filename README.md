@@ -61,6 +61,8 @@ Als Docker-Container paketieren für einfache Bereitstellung
 
 Mehrsprachige Unterstützung (Deutsch, Englisch, Französisch)
 
+✨ Made with Leidenschaft by AndMaverick
+
 📜 Lizenz
 
 Veröffentlicht unter der MIT-Lizenz. Siehe LICENSE für Details.

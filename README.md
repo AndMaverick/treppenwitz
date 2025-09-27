@@ -47,19 +47,20 @@ Wichtige Begriffe: [Datenbank, Server, Fehler, Backup]
 Priorität: Hoch  
 Nächste Schritte: Backup überprüfen, Server neu starten  
 
-🛤️ Fahrplan
 
-📊 Visualisierung der Worthäufigkeit hinzufügen
+---
 
-🤖 Erweiterte Sentiment-Analyse mit zusätzlichen Bibliotheken
+## 🛤️ Fahrplan  
+- 📊 Visualisierung der Worthäufigkeit hinzufügen  
+- 🤖 Erweiterte Sentiment-Analyse mit zusätzlichen Bibliotheken  
+- 📦 Als Docker-Container paketieren für einfache Bereitstellung  
+- 🌍 Mehrsprachige Unterstützung (Deutsch, Englisch, Französisch)  
 
-📦 Als Docker-Container paketieren für einfache Bereitstellung
+---
 
-🌍 Mehrsprachige Unterstützung (Deutsch, Englisch, Französisch)
+## 📜 Lizenz  
+Veröffentlicht unter der MIT-Lizenz. Siehe [LICENSE](LICENSE) für Details.  
 
-📜 Lizenz
+---
 
-Veröffentlicht unter der MIT-Lizenz. Siehe LICENSE
- für Details.
-
-✨ Mit Leidenschaft gebaut von AndMaverick
+✨ Mit Leidenschaft gebaut von **AndMaverick**

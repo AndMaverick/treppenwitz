@@ -1,7 +1,7 @@
 # Treppenwitz
 
 **Automatisierte Textzusammenfassung für Logs, Aufgaben und Notizen.**
-Tasks, log entries, key terms, a summary and next steps from plain notes and logs, in German and English. Dependency-free Python 3.10+.
+Tasks, log entries, key terms, a summary and next steps from plain notes and logs, in German and English. Dependency free Python 3.10+.
 
 [![CI](https://github.com/AndMaverick/treppenwitz/actions/workflows/ci.yml/badge.svg)](https://github.com/AndMaverick/treppenwitz/actions/workflows/ci.yml)
 
@@ -105,10 +105,10 @@ The 2000 documents are generated with known answers (`treppenwitz/synthetic.py`)
 ## Honest limits
 
 - **Agreement with the generator is not accuracy on your notes.** The generated documents use the formats listed above, so those figures say the code
-  does what it documents. The last block is the real test: 15 hand-written lines, 12 right. The three misses are `todo bericht` (a lowercase
+  does what it documents. The last block is the real test: 15 handwritten lines, 12 right. The three misses are `todo bericht` (a lowercase
   keyword without a colon is not trusted, because `task force meeting` is not a task), a numbered list item, and an imperative sentence with no marker.
   Unmarked tasks are not found.
-- **Inferred errors are guesses.** A free-text line containing `Fehler`, `error`, `failed` and similar words is counted as an error (and flagged
+- **Inferred errors are guesses.** A free text line containing `Fehler`, `error`, `failed` and similar words is counted as an error (and flagged
   `inferred` in the JSON) unless one of the two words before it is a negation. `Fehler beheben wir morgen` is counted as an error.
 - **Time zones are ignored.** Timestamps are compared as written.
 - **A date without a year takes the year of `--today`**, so `bis 05.01.` written in December means this January, which is already past.

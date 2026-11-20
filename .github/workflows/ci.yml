@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Unit tests
+        run: python -m unittest discover -s tests -t . -v
+      - name: Original launcher still works
+        run: python treppenwitz.py beispiel.txt
+      - name: Command line smoke test
+        run: python -m treppenwitz examples/wochenbericht.txt --today 2026-11-20 --lang en
+      - name: Gate must exit 1 on the example with errors
+        run: |
+          set +e
+          python -m treppenwitz examples/wochenbericht.txt --today 2026-11-20 --fail-on error > /dev/null 2>&1
+          test "$?" -eq 1
+      - name: Unreadable file must exit 2
+        run: |
+          set +e
+          python -m treppenwitz does-not-exist.txt 2> /dev/null
+          test "$?" -eq 2
+      - name: Verification figures
+        run: python examples/evaluate.py
+
+  quality:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install ruff mypy
+      - run: ruff check .
+      - run: mypy

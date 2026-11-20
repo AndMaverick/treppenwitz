@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "treppenwitz"
+version = "0.2.0"
+description = "Tasks, log entries, key terms, an extractive summary and rule-derived next steps from notes and logs, in German and English. Dependency-free Python."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "AndMaverick LLC" }]
+
+[project.scripts]
+treppenwitz = "treppenwitz.cli:main"
+
+[tool.setuptools.package-data]
+treppenwitz = ["py.typed"]
+
+[tool.setuptools.packages.find]
+include = ["treppenwitz*"]
+
+[tool.ruff]
+line-length = 130
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "C4", "SIM"]
+ignore = ["E501"]
+
+[tool.mypy]
+strict = true
+files = ["treppenwitz"]

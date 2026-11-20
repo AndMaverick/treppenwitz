@@ -1,0 +1,25 @@
+Wochenbericht Betrieb, Kalenderwoche 47
+
+Die Migration der Datenbank auf den neuen Cluster ist abgeschlossen. Die Migration lief ohne Datenverlust, die Datenbank antwortet schneller als zuvor.
+Der Kunde hat nach dem Stand der Datenbank gefragt und wünscht einen wöchentlichen Bericht über die Migration.
+Das Team trifft sich jeden Montag zur Planung.
+
+- [x] Backup der alten Datenbank prüfen @anna
+- [ ] Zertifikat für api.example.com erneuern !! bis 18.11.2026
+- [ ] Monitoring für den neuen Cluster einrichten @ben bis 24.11.
+TODO: Rechnung an den Kunden versenden bis 2026-12-05 @chris
+Aufgabe: Lizenz verlängern !!
+Aufgabe: Wartungsfenster abstimmen (erledigt)
+
+2026-11-19 22:01:12 INFO deploy 41 started
+2026-11-19 22:03:40 WARNING connection pool at 85 percent
+2026-11-19 23:15:02 INFO deploy 41 finished
+2026-11-20 03:12:07 ERROR upstream 3 refused connection
+2026-11-20 03:12:09 ERROR upstream 1 refused connection
+2026-11-20 03:12:15 ERROR upstream 2 refused connection
+2026-11-20 03:12:31 ERROR upstream 3 refused connection
+2026-11-20 03:12:40 ERROR upstream 2 refused connection
+2026-11-20 03:12:52 ERROR upstream 1 refused connection
+2026-11-20 03:41:00 INFO retry succeeded
+2026-11-20 08:30:00 ERROR cache miss for key 0x9f3a77c1
+Kein Fehler im Backup gefunden.
